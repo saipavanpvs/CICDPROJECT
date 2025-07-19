@@ -24,6 +24,7 @@ resource "aws_instance" "my_ec2" {
     instance_type="t3.medium"
     count=length(local.instance_names)
     vpc_security_group_ids = [aws_security_group.My_security_group.id]
+    key_name      = aws_key_pair.generated_key.key_name
 
     tags = {
         Name= local.instance_names[count.index]
