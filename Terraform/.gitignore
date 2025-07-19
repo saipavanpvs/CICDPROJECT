@@ -1,0 +1,26 @@
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Terraform backup files
+*.backup
+
+# Local .terraform folder (plugins, providers, init cache)
+.terraform/
+
+# Terraform plan output (if you use `terraform plan -out`)
+*.tfplan
+
+# Sensitive variable files (if any)
+*.tfvars
+*.tfvars.json
+
+# Ignore any generated logs
+*.log
+
+# Ignore binaries or executables
+*.exe
+
